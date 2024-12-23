@@ -15,7 +15,6 @@ class WaterCubit extends Cubit<WaterCubitState> {
   void loadDrinksAndDailys() {
     emit(WaterCubitLoading());
 
-    // Загрузка данных из обеих коллекций
     final drinksStream = _repository.getDrinks();
     final dailysStream = _repository.getDailys();
 
